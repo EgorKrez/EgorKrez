@@ -1,0 +1,347 @@
+/*
+colors: 
+Gunmetal = 022F40
+Pacific Blue = 38AECC
+Blue NCS = 0090C1
+Gunmetal = 183446
+Blue Sapphire = 046e8f
+*/
+body {
+    background: #183446;
+    margin: 0;
+    font-family: Verdana, sans-serif;
+}
+nav {
+    width: 230px;
+    height: 600px;
+    float: left;
+    position: fixed;
+    color: white;
+    font-size: 30px;
+    padding-left: 70px;
+    margin-left: -20px;
+    font-family: Verdana, sans-serif;
+    padding-top: 50px;
+    font-weight: 800;
+    line-height: 1.8;
+}
+nav a:hover{
+    background-color: #046e8f;
+    transition: 0.3s linear;
+
+}
+.main-block {
+    width: 1100px;
+    height: 1400px;
+    margin-left: 50px;
+    float: right;
+}
+.left-block {
+    width: 550px;
+    height: 1400px;
+    float: left;
+}
+.right-block {
+    width: 550px;
+    height: 1400px;
+    float: left;
+}
+menu {
+    width: 1400px;
+    height: 2000px;
+}
+.about-me {
+    width: 640px;
+    height: 608px;
+    background: #046e8f;
+    float: left;
+    padding-left: 50px;
+}
+.latest-articles {
+    width: 640px;
+    height: 700px;
+    float: left;
+    padding-left: 50px;
+}
+.my-photo {
+    width: 600px;
+    height: 600px;
+    background-image: url("./assets/k.jpg");
+    float: left;
+    padding-top: 8px;
+}
+.mini-block {
+    margin-top: 70px;
+    width: 340px;
+    height: 490px;
+    background: #093e52;
+    margin-left: 20px;
+    padding: 30px;
+}
+.mini-block h1{
+    font-size: 20px;
+    color: #38AECC;
+}
+.mini-block h2{
+    font-size: 12px;
+    color: rgb(223, 223, 223);
+    line-height: 1.5;
+    font-weight: 200;
+}
+.button {
+    height: 40px;
+    width: 200px;
+    margin-top: 50px;
+    margin-left: 20px;
+    border-radius: 35px;
+    border: 2px solid #38AECC;
+    text-align: center;
+    padding-top: 20px;
+    color: white;
+}
+.button:hover {
+    height: 40px;
+    width: 200px;
+    margin-left: 20px;
+    background: #38AECC;
+    margin-top: 50px;
+    border-radius: 35px;
+    cursor: pointer;
+    transition: 0.5s linear;
+    text-align: center;
+    padding-top: 20px;
+    color: white;
+}
+a:hover {
+    cursor: pointer;
+}
+.my-info {
+    width: 1180px;
+    height: 500px;
+    float: left;
+    padding-left: 20px;
+}
+.my-info h1{
+    margin-top: 40px;
+    margin-left: 50px;
+    font-size: 40px;
+    color: #38AECC;
+}
+.my-info h2{
+    margin-top: 40px;
+    margin-left: 50px;
+    font-size: 18px;
+    color: white;
+    font-weight: 200;
+    line-height: 1.5;
+}
+.my-info h3{
+    margin-top: 40px;
+    margin-left: 50px;
+    font-size: 20px;
+    color: white;
+    font-weight: 200;
+    line-height: 1.5;
+}
+.button1 {
+    padding-top: 20px;
+    height: 40px;
+    width: 200px;
+    margin-top: 50px;
+    margin-left: 50px;
+    border-radius: 35px;
+    color: white;
+    border: 2px solid #38AECC;
+    text-align: center;
+}
+.button1:hover {
+    height: 40px;
+    width: 200px;
+    padding-top: 20px;
+    background: #38AECC;
+    margin-top: 50px;
+    margin-left: 50px;
+    border-radius: 35px;
+    cursor: pointer;
+    color: white;
+    transition: 0.5s linear;
+
+}
+.career {
+        width: 1180px;
+        height: 700px;
+        float: left;
+        padding-left: 50px;
+}
+.career-ages {
+        width: 200px;
+        height: 700px;
+        float: left;
+        padding-left: 20px;
+}
+.career-ages h1{
+    color: #38AECC;
+}
+.career-info {
+    width: 950px;
+        height: 700px;
+        float: left;
+}
+.career-info h1{
+    font-size: 20px;
+    color: red;
+}
+.circle {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 2px solid black;
+    margin-top: 70px;
+    margin-left: 50px;
+}
+.minicirlce {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-top: 6px;
+    margin-left: 6px;
+}
+.minicirlce:hover {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: blue;
+    margin-top: 6px;
+    margin-left: 6px;
+    transition: 0.2s linear;
+}
+.footer {
+    width: 1180px;
+    height: 1000px;
+    float: left;
+}
+.field {
+    width: 600px;
+    height: 700px;
+    background: #0090C1;
+    margin-left: 500px;
+    margin-top: 200px;
+}
+input {
+    border: none;
+    height: 40px;
+    width: 500px;
+    margin-top: 50px;
+    margin-left: 50px;
+    background: none;
+    border-bottom: 2px solid white;
+    outline:none;
+    font-size: 20px;
+    color: white;
+}
+textarea {
+    border: none;
+    height: 150px;
+    width: 500px;
+    margin-top: 50px;
+    margin-left: 50px;
+    background: none;
+    border-bottom: 2px solid white;
+    outline:none;
+    font-size: 20px;
+    color: white;
+}
+.button2 {
+        height: 50px;
+        padding-top: 10px;
+        width: 500px;
+        margin-top: 50px;
+        margin-left: 50px;
+        text-align: center;
+        font-size: 30px;
+        border: 2px solid white;
+}
+.button2:hover {
+    height: 50px;
+    width: 500px;
+    margin-top: 50px;
+    margin-left: 50px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 30px;
+    border: 2px solid black;
+    transition: 0.1s linear;
+}
+.developper{
+    margin-top: 200px;
+    font-size: 30px;
+    color: silver;
+    font-family: Verdana, sans-serif;
+}
+.developper h1{
+    color: white;
+}
+.developper h2{
+    color: silver;
+    font-size: 15px;
+    font-weight: 200;
+}
+.developper a{
+    color: silver;
+    font-size: 15px;
+    font-weight: 200;
+    text-decoration: none;
+}
+.developper a:hover{
+    color: #0090C1;
+    font-size: 15px;
+    font-weight: 200;
+    text-decoration: none;
+    transition: 1s linear;
+}
+.link-panel{
+    margin-top: 40px;
+    height: 72px;
+    width: 72px;
+    float: left;
+    margin-left: 20px;
+}
+.link-panel:hover{
+    margin-top: 40px;
+    height: 72px;
+    width: 72px;
+    float: left;
+    margin-left: 20px;
+    box-shadow: #183446;
+    cursor: pointer;
+    transition: 1s linear;
+}
+.link-panel a{
+    display: block; 
+    text-align: center; 
+    height: 100%;
+}
+.skills{
+        width: 1180px;
+        height: 700px;
+        float: left;
+        padding-left: 70px;
+}
+.skills h1{
+    font-size: 30px;
+    color: #38AECC;
+}
+.skill-block{
+    height: 80px;
+    width: 400px;
+    margin-left: 50px;
+    margin-top: 70px;
+    float: left;
+}
+.skill-block h2{
+    margin-left: 120px;
+    margin-top: -50px;
+    color: white;
+    font-weight: 200;
+    font-size: 40px;
+}
