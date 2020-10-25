@@ -6,11 +6,21 @@ Blue NCS = 0090C1
 Gunmetal = 183446
 Blue Sapphire = 046e8f
 */
+@media screen and (max-width: 768 px){
+    
+}
 body {
     background: #183446;
     padding: 0%;
     margin: 0%;
     font-family: Verdana, sans-serif;
+}
+.krez{
+    transition: 1s; /* Время эффекта */
+    display: block;
+}
+.krez:hover{
+    transform: scale(1.1);
 }
 nav {
     width: 230px;
@@ -79,13 +89,25 @@ menu {
     float: left;
     padding-top: 8px;
 }
+.mini-block-photo {
+    height: 370px;
+    width: 340px;
+    margin-left: 15px;
+    display: inline-block; /* Строчно-блочный элемент */
+    overflow: hidden;
+}
+.mini-block-photo:hover {
+    cursor: pointer;
+}
 .mini-block {
     margin-top: 70px;
-    width: 340px;
-    height: 490px;
+    width: 400px;
+    height: 520px;
     background: #093e52;
     margin-left: 20px;
-    padding: 30px;
+    padding-left: 30px;
+    padding-top: 30px;
+    
 }
 .mini-block h1{
     font-size: 20px;
