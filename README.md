@@ -1,2 +1,0 @@
-# EgorKrez.github.io
-Linktree 
