@@ -6,14 +6,14 @@ Blue NCS = 0090C1
 Gunmetal = 183446
 Blue Sapphire = 046e8f
 */
-body {
+body, html {
     background: #183446;
-    padding: 0%;
-    margin-top: -20px;
+    padding: 0;
+    margin: 0;
     font-family: Verdana, sans-serif;
 }
 /*_nav*/
-nav {
+/* nav {
     width: 0px;
     height: 100%;
     position: fixed;
@@ -37,13 +37,7 @@ nav {
     font-weight: 600;
 }
 .nav-block:hover {
-    height: 50px;
-    width: 50px;
-    margin-top: 10px;
-    margin-left: -30px;
-    color: white;
-    font-size: -35px;
-    font-weight: 600;
+
     cursor: pointer;
 }
 .nav-cross {
@@ -58,17 +52,8 @@ nav {
         margin-left: 200px;  
 }
 .nav-cross:hover {
-    height: 50px;
-    width: 50px;
-    margin-top: 15px;
-    margin-left: -10px;
-    color: white;
-    font-size: 35px;
-    font-weight: 600;
-    margin-top: -50px;
-    margin-left: 200px;   
     cursor: pointer;
-}
+} */
 nav a {
     padding-left: 30px;
     text-decoration: none;
@@ -90,60 +75,63 @@ nav p {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    flex-wrap: wrap;
 }
-.main{
+.main {
     width: 1200px;
     display: flex;
     height: 100%;
-    display: flex;
     flex-direction: row;
     justify-content: center;
-    flex-wrap: wrap;
 }
-.mini-block-photo img {
-    transition: 1s; 
-    display: block;
+
+/*  SHOT BIO    */
+.short-bio {
+    display: flex;
+    width: 100%;
+    height: 550px;
 }
-.mini-block-photo img:hover {
-    transform: scale(1.1);
-}
-.left-block {
-    width: 550px;
-    height: 700px;
-    float: left;
-}
-.right-block {
-    width: 550px;
-    height: 700px;
-    float: left;
-}
-menu {
-    width: 1400px;
-    height: 2000px;
-}
-.about-me {
-    width: 640px;
-    height: 608px;
+
+.short-bio-description {
+    width: 100%;
     background: #046e8f;
-    float: left;
     padding-left: 50px;
+    display: flex;
 }
-.my-photo {
-    width: 600px;
-    height: 600px;
-    background-image: url("./assets/k.jpg");
-    float: left;
-    padding-top: 8px;
+
+
+.short-bio-img {
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    background-image: url("assets/k.jpg");
 }
+
+
+@media (max-width: 586px) {
+    .short-bio-img {
+        display: none;
+    }
+}
+
+menu {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-inline-start: 0;
+}
+
 a:hover {
     cursor: pointer;
 }
 .my-info {
-    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
     height: 420px;
-    float: left;
-    padding-left: 20px;
 }
 .my-info h1 {
     margin-top: 40px;
@@ -168,10 +156,9 @@ a:hover {
     line-height: 1.5;
 }
 .career {
-    width: 1000px;
+    display: flex;
+    width: 100%;
     height: 600px;
-    float: left;
-    padding-left: 50px;
 }
 .career-ages {
     width: 200px;
@@ -183,7 +170,10 @@ a:hover {
     color: #38AECC;
 }
 .career-info {
-    width: 950px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
     height: 700px;
     float: left;
 }
@@ -217,17 +207,31 @@ a:hover {
     transition: 0.3s linear;
 }
 .career-time {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     height: 60px;
-    width: 700px;
-    margin-left: 240px;
+    width: 100%;
+    max-width: 700px;
     margin-top: 47px;
     color: white;
 }
 #top-career-time{
     margin-top: 135px;
 }
+
+.about-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.short-bio-links {
+    display: flex;
+    justify-content: space-around;
+}
 .developper {
-    margin-top: 200px;
+    margin-top: 80px;
     font-size: 30px;
     color: silver;
     font-family: Verdana, sans-serif;
@@ -257,17 +261,9 @@ a:hover {
     margin-top: 40px;
     height: 72px;
     width: 72px;
-    float: left;
-    margin-left: 50px;
     filter: brightness(100%);
 }
 .link-panel:hover {
-    margin-top: 40px;
-    height: 72px;
-    width: 72px;
-    float: left;
-    margin-left: 50px;
-    box-shadow: #183446;
     cursor: pointer;
     transition: 1s linear;
     filter: brightness(200%);
@@ -278,25 +274,40 @@ a:hover {
     height: 100%;
 }
 .skills {
-    width: 1180px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1000px;
     height: 650px;
-    float: left;
     padding-left: 70px;
 }
+
+.skills-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
 .skills h1 {
     font-size: 30px;
     color: #38AECC;
 }
 .skill-block {
+    display: flex;
+    justify-content: space-around;
     height: 80px;
     width: 400px;
-    margin-left: 50px;
-    margin-top: 70px;
-    float: left;
+    margin: 15px;
+}
+
+.skill-block img{
+    height: 80px;
+    width: 80px;
+
 }
 .skill-block h2 {
-    margin-left: 120px;
-    margin-top: -50px;
     color: white;
     font-weight: 200;
     font-size: 40px;
@@ -337,6 +348,7 @@ footer {
     margin-left: 100px;
     margin-top: 100px;
     float: left;
+    
 }
 input {
     border: none;
@@ -349,6 +361,10 @@ input {
     outline:none;
     font-size: 20px;
     color: white;
+}
+
+::placeholder {
+    color: #fff;
 }
 textarea {
     border: none;
@@ -371,6 +387,7 @@ textarea {
     text-align: center;
     font-size: 30px;
     border: 2px solid white;
+    color: #fff;
 }
 .field-button:hover {
     height: 50px;
@@ -382,4 +399,5 @@ textarea {
     font-size: 30px;
     border: 2px solid black;
     transition: 0.1s linear;
+    color: black;
 }
