@@ -6,32 +6,21 @@ Blue NCS = 0090C1
 Gunmetal = 183446
 Blue Sapphire = 046e8f
 */
-element{
---screen-sm : 576px;
---screen-md : 768px;
---screen-lg : 992px;
---screen-xl : 1200px;
-
---screen-sm-max : 767;
---screed-md-max : 991;
---screen-lg-max : 1199;
-}
-
-
-
 body {
     background: #183446;
     padding: 0%;
-    margin: 0%;
+    margin-top: -20px;
     font-family: Verdana, sans-serif;
 }
-.section-outer{
-    padding-right: 20px;
-    padding-left: 20px;
-}
-.section-inner{
-    max-width: 1100px;
-    margin-left: 300px;
+.content{
+    /*float: left;*/
+    width: 1200px;
+    display: flex;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 .mini-block-photo img {
     transition: 1s; 
@@ -40,21 +29,83 @@ body {
 .mini-block-photo img:hover {
     transform: scale(1.1);
 }
+/*nav {
+    height: 100px;
+    width: 1150px;
+    background: #183446;
+    margin-left: 75px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.nav-block {
+    height: 50px;
+    width: 150px;
+    margin-top: 25px;
+    margin-left: 10px;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}*/
 nav {
-    width: 230px;
-    height: 600px;
-    float: left;
+    width: 0px;
+    height: 100%;
     position: fixed;
     color: white;
     font-size: 30px;
-    padding-left: 70px;
+    padding-left: 30px;
     margin-left: -20px;
     font-family: Verdana, sans-serif;
     padding-top: 50px;
     font-weight: 800;
     line-height: 1.8;
+    overflow: hidden;
+}
+.nav-block {
+    height: 50px;
+    width: 50px;
+    margin-top: 10px;
+    margin-left: -30px;
+    color: white;
+    font-size: 35px;
+    font-weight: 600;
+}
+.nav-block:hover {
+    height: 50px;
+    width: 50px;
+    margin-top: 10px;
+    margin-left: -30px;
+    color: white;
+    font-size: -35px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.nav-cross {
+        height: 50px;
+        width: 50px;
+        margin-top: 15px;
+        margin-left: -10px;
+        color: white;
+        font-size: 35px;
+        font-weight: 600;
+        margin-top: -50px;
+        margin-left: 200px;  
+}
+.nav-cross:hover {
+    height: 50px;
+    width: 50px;
+    margin-top: 15px;
+    margin-left: -10px;
+    color: white;
+    font-size: 35px;
+    font-weight: 600;
+    margin-top: -50px;
+    margin-left: 200px;   
+    cursor: pointer;
 }
 nav a {
+    padding-left: 30px;
     text-decoration: none;
     color: white;
 }
@@ -71,18 +122,20 @@ nav p {
     width: 1100px;
     height: 1400px;
     margin-left: 50px;
-    float: right;
-
-    @media (max-width: var(--screen-sm-max)){
-    flex-direction: column;
-    }
+    /*float: right;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 .left-block {
+    
     width: 550px;
     height: 1400px;
     float: left;
 }
 .right-block {
+    
     width: 550px;
     height: 1400px;
     float: left;
@@ -105,7 +158,7 @@ menu {
     padding-left: 50px;
 }
 .my-photo {
-    width: 550px;
+    width: 600px;
     height: 600px;
     background-image: url("./assets/k.jpg");
     float: left;
@@ -115,7 +168,7 @@ menu {
     height: 370px;
     width: 340px;
     margin-left: 15px;
-    display: inline-block; 
+    display: inline-block; /* Строчно-блочный элемент */
     overflow: hidden;
 }
 .mini-block-photo:hover {
@@ -173,7 +226,6 @@ a:hover {
     height: 500px;
     float: left;
     padding-left: 20px;
-    padding-right: 150px;
 }
 .my-info h1 {
     margin-top: 40px;
@@ -222,7 +274,7 @@ a:hover {
 
 }
 .career {
-        width: 1180px;
+        width: 1000px;
         height: 600px;
         float: left;
         padding-left: 50px;
@@ -409,7 +461,7 @@ textarea {
     height: 100%;
 }
 .skills {
-        width: 1100px;
+        width: 1180px;
         height: 700px;
         float: left;
         padding-left: 70px;
@@ -421,7 +473,7 @@ textarea {
 .skill-block {
     height: 80px;
     width: 400px;
-    margin-left: 100px;
+    margin-left: 50px;
     margin-top: 70px;
     float: left;
 }

@@ -7,23 +7,53 @@
 
     <title>EgorKrez</title>
 </head>
+<script>
+    function openNav() {
+        let main = document.querySelector(".content")
+        let nav = document.querySelector("nav")
+        //let main = document.getElementsByClassName("content")
+        //console.log(main.style.backgroundColor)
+        nav.style.width = "250px"
+        main.style.marginLeft= "250px"
+        
+        
+      //document.getElementById("nav").style.width = "250px";
+      //document.getElementsByClassName("main-block").style.marginLeft = "300px";
+    }
+    
+    function closeNav() {
+      /* document.getElementById("mySidenav").style.width = "0";
+      document.getElementById("main").style.marginLeft= "0"; */
+        let main = document.querySelector(".content")
+        let nav = document.querySelector("nav")
+        nav.style.width = "0px"
+        main.style.marginLeft= "0px"
+        console.log("HellO!!")
+    }
+    </script>
 <body>
     <menu>
-    <nav><a href="#home">Home</a><br>
-        <a>Blog</a><br>
+    <nav>
+        <div class="nav-block"  onclick="openNav()">&#9776</div>
+        <div class="nav-cross" onclick="closeNav()">&#10006</div>
+        <a href="#home">Home</a><br>
+        <a href="#">Blog</a><br>
         <a href="#about-me">About Me</a><br>
-        <a>Tech Stack</a><br>
+        <a href="#">Tech Stack</a><br>
         <a href="#career">Workspace</a><br>
-        <a>Portfolio</a><br>
+        <a href="#">Portfolio</a><br>
         <a href="#field">Contact</a><br>
-        <a>FAQs</a>
+        <a href="#">FAQs</a>
         <p style="margin-top: 50px; color: #38AECC; font-size: 12px; font-weight: 100;">N A M E</p>
         <p style="margin-top: 10px; color: white; font-size: 15px; font-weight: 100;">Egor Krez</p>
         <p style="margin-top: 30px; color: #38AECC; font-size: 12px; font-weight: 100;">R O L E</p>
         <p style="margin-top: 10px; color: white; font-size: 15px; font-weight: 100;">Frontend developper</p>
     </nav>
-    <div class="section-outer">
-    <div class="section-inner">
+    <!--<nav>
+        <div class="nav-block">&#9776</div>
+        
+    </nav>-->
+    <div class="content">
     <div class="main-block" id = "home">
         <div class="left-block">
             <div class="about-me">
@@ -97,13 +127,12 @@
         </div>
         <div class="skills">
             <h1>My skills</h1>
-            <div class="skill-block" style="margin-left: 100px;"><img src="./assets/js.jpg" ><h2>JavaScript</h2></div>
+            <div class="skill-block" style="margin-left: 150px;"><img src="./assets/js.jpg" ><h2>JavaScript</h2></div>
             <div class="skill-block"><img src="./assets/gitLogo.png" height="80px" width="80px"><h2>Git</h2></div>
-            <div class="skill-block" style="margin-left: 100px;"><img src="./assets/html.png" height="80px" width="80px"><h2>HTML/CSS</h2></div>
+            <div class="skill-block" style="margin-left: 150px;"><img src="./assets/html.png" height="80px" width="80px"><h2>HTML/CSS</h2></div>
             <div class="skill-block"><img src="./assets/java.jpg" height="80px" width="80px"><h2>Java</h2></div>
-            <div class="skill-block" style="margin-left: 100px;"><img src="./assets/c++.png" height="80px" width="80px"><h2>C & C++</h2></div>
+            <div class="skill-block" style="margin-left: 150px;"><img src="./assets/c++.png" height="80px" width="80px"><h2>C & C++</h2></div>
             <div class="skill-block"><img src="./assets/linux.png" height="80px" width="80px"><h2>Linux</h2></div>
-            <div class="skill-block" style="margin-left: 350px;"><img src="./assets/windows.png" height="80px" width="80px" ><h2>Windows</h2></div>
         </div>
         <div class="footer">
             <div class="footer-text">
@@ -122,8 +151,8 @@
             </div>
         </div>
     </div>
-</div>
-</div>
+<!--</div>-->
 </menu>
 </body>
 </html>
+
