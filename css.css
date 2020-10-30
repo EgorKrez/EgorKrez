@@ -70,56 +70,50 @@ nav p {
 .nav-menu {
     height: 50px;
     width: 100%;
-    background: black;
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 nav {
     height: 50px;
     width: 100%;
-    background: black;
     position: fixed;
+    background: #183446;
+    overflow: hidden;
 }
 .nav-block {
-    height: 50px;
-    width: 50px;
-    margin-top: 10px;
-    margin-left: -30px;
+    height: 30px;
+    width: 5%;
+    margin-left: 100px;
+    margin-top: 5px;
+    font-size: 30px;
     color: white;
-    font-size: 35px;
-    font-weight: 600;
-}
-.nav-block:hover {
-
-    cursor: pointer;
 }
 .nav-cross {
-        height: 50px;
-        width: 50px;
-        margin-top: 15px;
-        margin-left: -10px;
-        color: white;
-        font-size: 35px;
-        font-weight: 600;
-        margin-top: -50px;
-        margin-left: 200px;  
-}
-.nav-cross:hover {
-    cursor: pointer;
-} 
-nav a {
-    padding-left: 30px;
-    text-decoration: none;
+    height: 30px;
+    width: 5%;
+    margin-top: 5px;
+    font-size: 30px;
     color: white;
 }
-nav a:hover {
-    background-color: #046e8f;
-    transition: 0.3s linear;
+#nav-block {
+    margin-top: 15px;
+}
+.href-block {
+    height: 200px;
+    width: 100px;
+    margin-left: 100px;
+    margin-top: 35px;
+}
+nav a {
+    color: white;
+    line-height: 2;
     text-decoration: none;
 }
-nav p {
-    margin-left: 30px;
+.nav-block:hover {
+    cursor: pointer;
 }
-
 
 /*_menu*/
 .main-block {
