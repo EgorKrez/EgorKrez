@@ -13,7 +13,7 @@ body, html {
     font-family: Verdana, sans-serif;
 }
 /*_nav*/
-/* nav {
+ /*nav {
     width: 0px;
     height: 100%;
     position: fixed;
@@ -53,7 +53,59 @@ body, html {
 }
 .nav-cross:hover {
     cursor: pointer;
-} */
+} 
+nav a {
+    padding-left: 30px;
+    text-decoration: none;
+    color: white;
+}
+nav a:hover {
+    background-color: #046e8f;
+    transition: 0.3s linear;
+    text-decoration: none;
+}
+nav p {
+    margin-left: 30px;
+}*/
+.nav-menu {
+    height: 50px;
+    width: 100%;
+    background: black;
+    display: flex;
+}
+nav {
+    height: 50px;
+    width: 100%;
+    background: black;
+    position: fixed;
+}
+.nav-block {
+    height: 50px;
+    width: 50px;
+    margin-top: 10px;
+    margin-left: -30px;
+    color: white;
+    font-size: 35px;
+    font-weight: 600;
+}
+.nav-block:hover {
+
+    cursor: pointer;
+}
+.nav-cross {
+        height: 50px;
+        width: 50px;
+        margin-top: 15px;
+        margin-left: -10px;
+        color: white;
+        font-size: 35px;
+        font-weight: 600;
+        margin-top: -50px;
+        margin-left: 200px;  
+}
+.nav-cross:hover {
+    cursor: pointer;
+} 
 nav a {
     padding-left: 30px;
     text-decoration: none;
@@ -67,6 +119,8 @@ nav a:hover {
 nav p {
     margin-left: 30px;
 }
+
+
 /*_menu*/
 .main-block {
     width: 1100px;
@@ -88,7 +142,8 @@ nav p {
 .short-bio {
     display: flex;
     width: 100%;
-    height: 550px;
+    background: #046e8f;
+    height: 600px;
 }
 
 .short-bio-description {
@@ -116,6 +171,7 @@ nav p {
 }
 
 menu {
+    width: 100%;
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -163,8 +219,9 @@ a:hover {
 .career-ages {
     width: 200px;
     height: 700px;
-    float: left;
-    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 40px;
 }
 .career-ages h1 {
     color: #38AECC;
@@ -173,21 +230,29 @@ a:hover {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     width: 100%;
-    height: 700px;
-    float: left;
+    max-height: 900px;
 }
 .career-info h1 {
-    margin-top: 100px;
-    margin-left: 40px;
+    /*margin-top: 100px;
+    margin-left: 40px;*/
     font-size: 20px;
 }
+
+@media (max-width: 730px) {
+    .career {
+        margin-top: 130px;
+    }
+}
+
 .circle {
     width: 32px;
     height: 32px;
     border-radius: 50%;
     border: 2px solid black;
-    margin-top: 70px;
+    margin-top: 50px;
     margin-left: 50px;
 }
 .minicirlce {
@@ -216,8 +281,23 @@ a:hover {
     margin-top: 47px;
     color: white;
 }
+#second-circle {
+    margin-top: 65px;
+}
+#third-circle {
+    margin-top: 70px;
+}
+#fourth-circle {
+    margin-top: 62px;
+}
+#fifth-circle {
+    margin-top: 70px;
+}
 #top-career-time{
-    margin-top: 135px;
+    margin-top: 110px;
+}
+#bottom-career-time {
+    margin-top: 40px;
 }
 
 .about-me {
@@ -279,17 +359,27 @@ a:hover {
     flex-wrap: wrap;
     width: 100%;
     max-width: 1000px;
-    height: 650px;
-    padding-left: 70px;
+    max-height: 650px;
 }
-
+.my-skills-wrapper {
+    padding-left: 70px;
+    font-size: 18px;
+    color: #38AECC;
+    /*margin-left: -930px;*/
+    /* display: flex;
+    justify-content: center; */
+    float: left;
+    margin-top: 50px;
+}
 .skills-wrapper {
+    flex-direction: row;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    margin-top: 50px;
+    max-width: 900px;
 }
-
 .skills h1 {
     font-size: 30px;
     color: #38AECC;
@@ -298,7 +388,7 @@ a:hover {
     display: flex;
     justify-content: space-around;
     height: 80px;
-    width: 400px;
+    width: 350px;
     margin: 15px;
 }
 
@@ -314,15 +404,21 @@ a:hover {
 }
 /*_footer*/
 footer {
-    width: 1180px;
-    height: 1000px;
-    float: left;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 1200px;
+    max-height: 750px;
+    padding-bottom: 100px;
 }
+
+
 .footer-text {
     height: 400px;
     width: 350px;
     padding-left: 50px;
-    float: left;
     margin-top: 70px;
 }
 .footer-text h1 {
@@ -342,20 +438,22 @@ footer {
     font-weight: 200;
 }
 .field {
-    width: 600px;
-    height: 700px;
-    background: #0090C1;
-    margin-left: 100px;
     margin-top: 100px;
-    float: left;
-    
+    width: 50%;
+    height: 20%;
+    background: #0090C1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    text-align: center; 
+    align-items: center; 
+    padding-bottom: 50px; 
 }
 input {
     border: none;
     height: 40px;
-    width: 500px;
-    margin-top: 50px;
-    margin-left: 50px;
+    width: 80%;
+    margin-top: 30px;
     background: none;
     border-bottom: 2px solid white;
     outline:none;
@@ -369,9 +467,8 @@ input {
 textarea {
     border: none;
     height: 150px;
-    width: 500px;
-    margin-top: 50px;
-    margin-left: 50px;
+    width: 80%;
+    margin-top: 30px;
     background: none;
     border-bottom: 2px solid white;
     outline:none;
@@ -381,23 +478,96 @@ textarea {
 .field-button {
     height: 50px;
     padding-top: 10px;
-    width: 500px;
-    margin-top: 50px;
-    margin-left: 50px;
-    text-align: center;
+    width: 80%;
+    /*text-align: center;*/
     font-size: 30px;
     border: 2px solid white;
     color: #fff;
 }
 .field-button:hover {
     height: 50px;
-    width: 500px;
-    margin-top: 50px;
-    margin-left: 50px;
+    width: 80%;
     cursor: pointer;
     text-align: center;
     font-size: 30px;
     border: 2px solid black;
     transition: 0.1s linear;
     color: black;
+}
+
+@media (max-width: 1000px) {
+    .field {
+        margin-top: 100px;
+        width: 80%; 
+    }
+   
+}
+
+@media (max-width: 438px){
+    .career {
+        margin-top: 200px;
+    }
+}
+
+@media (max-width: 363px){
+    .career {
+        margin-top: 250px;
+    }
+}
+
+@media (max-width: 330px){
+    .career {
+        margin-top: 300px;
+    }
+}
+
+@media (max-width: 383px){
+    .field {
+        margin-top: 150px;
+    }
+}
+
+@media (max-width: 763px){
+    #first-block {
+        margin-left: 0px;
+    }
+    #second-block {
+        margin-left: -60px;
+    }
+     #third-block {
+        margin-left: 20px;
+    } 
+    #fourth-block {
+        margin-left: -40px;
+    }
+    #fifth-block {
+        margin-left: 10px;
+    }
+    #sixth-block {
+        margin-left: -20px;
+    }
+}
+
+@media (max-width: 469px) {
+    .career-ages {
+        padding-left: 20px;
+    }
+    .career-time {
+        font-size: 12px;
+    }
+    .circle {
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 397px) {
+    .my-info h2 {
+        font-size: 12px;
+    }
+    .my-info h3 {
+        font-size: 12px;
+    }
+    .my-info {
+        height: 220px;
+    }
 }
