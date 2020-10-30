@@ -368,7 +368,7 @@ a:hover {
 .skills-wrapper {
     flex-direction: row;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
     margin-top: 50px;
@@ -382,7 +382,7 @@ a:hover {
     display: flex;
     justify-content: space-around;
     height: 80px;
-    width: 350px;
+    width: 280px;
     margin: 15px;
 }
 
@@ -498,6 +498,9 @@ textarea {
 }
 
 @media (max-width: 438px){
+    .footer-text h2 {
+        font-size: 15px;
+    }
     .career {
         margin-top: 200px;
     }
@@ -522,6 +525,9 @@ textarea {
 }
 
 @media (max-width: 763px){
+    .my-skills-wrapper h2 {
+        font-size: 10px;
+    }
     #first-block {
         margin-left: 0px;
     }
