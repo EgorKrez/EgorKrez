@@ -14,3 +14,6 @@ function closeNav() {
     nav.style.height = "50px"
     navMenu.style.height = "50px"
 }
+
+
+
