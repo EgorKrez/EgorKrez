@@ -6,6 +6,7 @@ Blue NCS = 0090C1
 Gunmetal = 183446
 Blue Sapphire = 046e8f
 */
+/*_body*/
 body, html {
     background: #183446;
     padding: 0;
@@ -14,20 +15,18 @@ body, html {
 }
 /*_nav*/
 .nav-menu {
-    height: 200%;
-    width: 200px;
-    background: black;
+    height: 50px;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 nav {
-    height: 200%;
-    width: 200px;
-    background: black;
-    float: left !important;
+    height: 50px;
+    width: 100%;
     position: fixed;
+    background: #183446;
     overflow: hidden;
     z-index: 10;
 }
@@ -45,6 +44,9 @@ nav {
     margin-top: 5px;
     font-size: 30px;
     color: white;
+}
+.nav-cross {
+    cursor: pointer;
 }
 #nav-block {
     margin-top: 15px;
@@ -64,71 +66,15 @@ nav a {
     cursor: pointer;
 }
 
-@media (max-width: 992px) {
-    .nav-menu {
-        height: 50px;
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
-    nav {
-        height: 50px;
-        width: 100%;
-        position: fixed;
-        background: #183446;
-        overflow: hidden;
-        z-index: 10;
-    }
-    .nav-block {
-        height: 30px;
-        width: 5%;
-        margin-left: 100px;
-        margin-top: 5px;
-        font-size: 30px;
-        color: white;
-    }
-    .nav-cross {
-        height: 30px;
-        width: 5%;
-        margin-top: 5px;
-        font-size: 30px;
-        color: white;
-    }
-    #nav-block {
-        margin-top: 15px;
-    }
-    .href-block {
-        height: 200px;
-        width: 100px;
-        margin-left: 100px;
-        margin-top: 35px;
-    }
-    nav a {
-        color: white;
-        line-height: 2;
-        text-decoration: none;
-    }
-    .nav-block:hover {
-        cursor: pointer;
-    }
-}
 /*_menu*/
-.main-block {
-    width: 1100px;
-    height: 1400px;
-    margin-left: 50px;
+menu {
+    width: 100%;
+    margin: 0;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
-}
-.main {
-    width: 1200px;
-    display: flex;
-    height: 100%;
-    flex-direction: row;
-    justify-content: center;
+    align-items: center;
+    padding-inline-start: 0;
 }
 
 /*  SHOT BIO    */
@@ -138,7 +84,6 @@ nav a {
     background: #046e8f;
     height: 600px;
 }
-
 .short-bio-description {
     width: 100%;
     background: #046e8f;
@@ -152,11 +97,15 @@ nav a {
     background-image: url("./assets/k.jpg");
     margin-top: 20px;
     margin-left: 300px;
+    position: fixed;
+    margin-top: -400px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50%;
     border: 2px solid white;
     display: none;
+    filter: blur(0.5px); 
+    z-index: 10;
 }
 
 @media (max-width: 520px) {
@@ -167,17 +116,17 @@ nav a {
 
 @media (max-width: 450px) {
     .my-circle-photo {
-        margin-left: 200px;
+        margin-left: 220px;
         height: 17%;
-        width: 21%;
+        width: 24%;
         }
 }
 
 @media (max-width: 370px) {
     .my-circle-photo {
-        margin-left: 200px;
+        margin-left: 165px;
         height: 14%;
-        width: 21%;
+        width: 24%;
         }
 }
 
@@ -190,6 +139,58 @@ nav a {
     background-image: url("assets/k.jpg");
 }
 
+.about-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.short-bio-links {
+    display: flex;
+    justify-content: space-around;
+}
+.developper {
+    font-size: 30px;
+    color: silver;
+    font-family: Verdana, sans-serif;
+}
+.developper h1 {
+    color: white;
+}
+.developper h2 {
+    color: silver;
+    font-size: 15px;
+    font-weight: 200;
+}
+.developper a {
+    color: silver;
+    font-size: 15px;
+    font-weight: 200;
+    text-decoration: none;
+}
+.developper a:hover {
+    color: #0090C1;
+    font-size: 15px;
+    font-weight: 200;
+    text-decoration: none;
+    transition: 1s linear;
+}
+.link-panel {
+    margin-top: 40px;
+    height: 72px;
+    width: 72px;
+    filter: brightness(100%);
+}
+.link-panel:hover {
+    cursor: pointer;
+    transition: 1s linear;
+    filter: brightness(200%);
+}
+.link-panel a {
+    display: block; 
+    text-align: center; 
+    height: 100%;
+}
 
 @media (max-width: 586px) {
     .short-bio-img {
@@ -200,19 +201,12 @@ nav a {
     }
 }
 
-menu {
-    width: 100%;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-inline-start: 0;
-}
-
 a:hover {
     cursor: pointer;
 }
+
+/*_my-info (Inf about me)*/
+
 .my-info {
     display: flex;
     flex-direction: column;
@@ -243,6 +237,7 @@ a:hover {
     line-height: 1.5;
     padding-right: 20px;
 }
+/*_career */
 .career {
     display: flex;
     width: 100%;
@@ -269,8 +264,6 @@ a:hover {
     padding-right: 20px;
 }
 .career-info h1 {
-    /*margin-top: 100px;
-    margin-left: 40px;*/
     font-size: 20px;
 }
 
@@ -333,58 +326,7 @@ a:hover {
     margin-top: 40px;
 }
 
-.about-me {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.short-bio-links {
-    display: flex;
-    justify-content: space-around;
-}
-.developper {
-    font-size: 30px;
-    color: silver;
-    font-family: Verdana, sans-serif;
-}
-.developper h1 {
-    color: white;
-}
-.developper h2 {
-    color: silver;
-    font-size: 15px;
-    font-weight: 200;
-}
-.developper a {
-    color: silver;
-    font-size: 15px;
-    font-weight: 200;
-    text-decoration: none;
-}
-.developper a:hover {
-    color: #0090C1;
-    font-size: 15px;
-    font-weight: 200;
-    text-decoration: none;
-    transition: 1s linear;
-}
-.link-panel {
-    margin-top: 40px;
-    height: 72px;
-    width: 72px;
-    filter: brightness(100%);
-}
-.link-panel:hover {
-    cursor: pointer;
-    transition: 1s linear;
-    filter: brightness(200%);
-}
-.link-panel a {
-    display: block; 
-    text-align: center; 
-    height: 100%;
-}
+/*_skills*/
 .skills {
     display: flex;
     flex-direction: column;
@@ -397,9 +339,6 @@ a:hover {
     padding-left: 70px;
     font-size: 18px;
     color: #38AECC;
-    /*margin-left: -930px;*/
-    /* display: flex;
-    justify-content: center; */
     float: left;
     margin-top: 50px;
 }
@@ -434,6 +373,7 @@ a:hover {
     font-weight: 200;
     font-size: 40px;
 }
+
 /*_footer*/
 footer {
     display: flex;
@@ -445,8 +385,6 @@ footer {
     max-height: 750px;
     padding-bottom: 100px;
 }
-
-
 .footer-text {
     height: 400px;
     width: 350px;
@@ -512,7 +450,6 @@ textarea {
     height: 50px;
     padding-top: 10px;
     width: 80%;
-    /*text-align: center;*/
     font-size: 30px;
     border: 2px solid white;
     color: #fff;
