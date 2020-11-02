@@ -149,6 +149,19 @@ menu {
     display: flex;
     justify-content: space-around;
 }
+
+@media (max-width: 1000px) {
+    .short-bio-links {
+        margin-left: -10px;
+    }
+}
+
+@media (max-width: 900px) {
+    .short-bio-links {
+        margin-left: -40px;
+    }
+}
+
 .developper {
     font-size: 30px;
     color: silver;
@@ -522,9 +535,18 @@ textarea {
     #sixth-block {
         margin-left: -20px;
     }
+    #seventh-block {
+        margin-left: 0px;
+    }
+    #eighth-block {
+        margin-left: 30px;
+    }
 }
 
 @media (max-width: 469px) {
+    .skill-block h2 {
+        font-size: 30px;
+    }
     .career-ages {
         padding-left: 20px;
     }
