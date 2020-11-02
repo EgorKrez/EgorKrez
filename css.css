@@ -543,9 +543,16 @@ textarea {
     }
 }
 
+.skill-block.eighth-block img{
+    margin-top: 15px;
+}
+
 @media (max-width: 469px) {
     .skill-block h2 {
         font-size: 30px;
+    }
+    .skill-block.eighth-block img{
+        margin-top: 0px;
     }
     .career-ages {
         padding-left: 20px;
