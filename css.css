@@ -135,24 +135,24 @@ menu {
 @media (max-width: 376px){
     .my-circle-photo {
         margin-left: 185px;
-        height: 110px;
-        width: 110px;
+        height: 100px;
+        width: 100px;
         }
 }
 
 @media (max-width: 360px) {
     .my-circle-photo {
         margin-left: 185px;
-        height: 100px;
-        width: 100px;
+        height: 90px;
+        width: 90px;
         }
 }
 
 @media (max-width: 340px) {
     .my-circle-photo {
         margin-left: 185px;
-        height: 90px;
-        width: 90px;
+        height: 80px;
+        width: 80px;
         }
 }
 
@@ -171,6 +171,16 @@ menu {
     background-size: cover;
     background-position: 50%;
     background-image: url("assets/k.jpg");
+}
+
+@media (max-width: 322px) {
+    .short-bio {
+        width: 130%;
+        padding-left: 20px;
+    }
+    .my-circle-photo {
+        margin-left: 225px;
+        }
 }
 
 .about-me {
@@ -357,9 +367,6 @@ a:hover {
     transition: 0.3s linear;
 }
 .career-time {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
     height: 60px;
     width: 100%;
     max-width: 700px;
