@@ -126,8 +126,24 @@ menu {
 @media (max-width: 390px) {
     .my-circle-photo {
         margin-left: 185px;
-        height: 14%;
-        width: 26%;
+        height: 13%;
+        width: 25%;
+        }
+}
+
+@media (max-width: 376px) and (max-height: 813px){
+    .my-circle-photo {
+        margin-left: 185px;
+        height: 12%;
+        width: 25%;
+        }
+}
+
+@media (max-width: 376px) and (max-height: 668px){
+    .my-circle-photo {
+        margin-left: 185px;
+        height: 15%;
+        width: 25%;
         }
 }
 
@@ -135,7 +151,7 @@ menu {
     .my-circle-photo {
         margin-left: 185px;
         height: 12%;
-        width: 23%;
+        width: 22%;
         }
 }
 
@@ -144,6 +160,14 @@ menu {
         margin-left: 185px;
         height: 11%;
         width: 20%;
+        }
+}
+
+@media (max-width: 310px) {
+    .my-circle-photo {
+        margin-left: 195px;
+        height: 10%;
+        width: 23%;
         }
 }
 
@@ -273,6 +297,18 @@ a:hover {
     width: 100%;
     height: 600px;
 }
+.career-wrapper {
+    font-size: 17px;
+    color: #38AECC;
+    float: left;
+}
+
+@media (max-width: 800px) {
+    .career-wrapper {
+        margin-left: 10px;
+    }
+}
+
 .career-ages {
     width: 200px;
     height: 700px;
@@ -362,11 +398,10 @@ a:hover {
     flex-direction: column;
     flex-wrap: wrap;
     width: 100%;
-    max-width: 1000px;
     max-height: 650px;
 }
 .my-skills-wrapper {
-    padding-left: 70px;
+    padding-left: 40px;
     font-size: 18px;
     color: #38AECC;
     float: left;
@@ -411,22 +446,23 @@ footer {
     flex-wrap: wrap;
     justify-content: space-around;
     width: 100%;
-    max-width: 1200px;
     max-height: 750px;
     padding-bottom: 100px;
 }
 .footer-text {
     height: 400px;
     width: 350px;
-    padding-left: 50px;
     margin-top: 70px;
     padding-right: 20px;
+    padding-left: 50px;
 }
 .footer-text h1 {
+    margin-left: -30px;
     font-size: 30px;
     color: #38AECC;
 }
 .footer-text h2 {
+    padding-top: 20px;
     font-size: 20px;
     color: white;
     line-height: 2;
@@ -448,6 +484,7 @@ footer {
     justify-content: center; 
     text-align: center; 
     align-items: center; 
+    padding-top: 50px;
     padding-bottom: 50px; 
 }
 input {
