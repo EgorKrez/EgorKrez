@@ -493,6 +493,9 @@ footer {
     .field {
         margin-left: 50px;
     }
+    .field {
+        margin-bottom: 100px;
+    }
 }
 
 input {
@@ -566,12 +569,6 @@ textarea {
 @media (max-width: 330px){
     .career {
         margin-top: 300px;
-    }
-}
-
-@media (max-width: 383px){
-    .field {
-        margin-top: 150px;
     }
 }
 
