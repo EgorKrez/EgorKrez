@@ -29,6 +29,43 @@ nav {
     overflow: hidden;
     z-index: 10;
 }
+.nav-full-screen-container {
+    height: 50px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-full-screen {
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    background: #183446;
+    overflow: hidden;
+    z-index: 10;
+}
+.nav-full-screen-block {
+    height: 30px;
+    width: 200px;
+    margin-right: 50px;
+    float: left;
+    text-align: center;
+}
+.nav-full-screen-block a {
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    font-family: Helvetica;
+    text-decoration: none;
+}
+
+@media (max-width: 992px) {
+    .nav-full-screen {
+        display: none;
+    }
+}
+
 .nav-block {
     height: 30px;
     width: 5%;
@@ -36,6 +73,11 @@ nav {
     margin-top: 5px;
     font-size: 30px;
     color: white;
+}
+.nav-a-wrapper {
+    height: 30px;
+    width: 200px;
+
 }
 .nav-cross {
     height: 30px;
@@ -293,6 +335,15 @@ a:hover {
     line-height: 1.5;
     padding-right: 20px;
 }
+
+@media (max-width: 320px) {
+    .my-info h2 {
+        padding-right: 0px;
+    }
+    .my-info h3 {
+        padding-right: 0px;
+    }
+}
 /*_career */
 .career {
     display: flex;
@@ -341,6 +392,11 @@ a:hover {
     }
 } 
 
+@media (max-width: 320px) {
+    .career-block-wrapper {
+        padding-right: 0px;
+    }
+}
 .career-ages {
     width: 200px;
     height: 700px;
@@ -387,12 +443,7 @@ a:hover {
     margin-left: 6px;
 }
 .minicirlce:hover {
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
     background: #38AECC;
-    margin-top: 6px;
-    margin-left: 6px;
     transition: 0.3s linear;
 }
 .career-time {
