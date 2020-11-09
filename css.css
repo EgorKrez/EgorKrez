@@ -606,8 +606,9 @@ textarea {
     outline:none;
     font-size: 20px;
     color: white;
-    max-width: 600px;
-    max-height: 150px;
+    width: 600px;
+    height: 150px;
+    resize: none;
 }
 .field-button {
     height: 50px;
@@ -632,7 +633,7 @@ textarea {
     height: 50px;
     width: 100%;
     position: absolute;
-    margin-top: 800px;
+    margin-top: 650px;
     display: flex;
     justify-content: center;
 }
@@ -642,15 +643,20 @@ textarea {
     text-align: center;
     color: white;
     font-size: 20px;
-
 }
+
+.button {
+    border: 2px solid white;
+    width: 70%;
+}
+
 @media (max-width: 1000px) {
     .field {
         margin-top: 100px;
         width: 80%; 
     }
    .footer-info-wrapper {
-       margin-top: 1200px;
+       margin-top: 1050px;
     }
     .footer-info {
         font-size: 15px;
