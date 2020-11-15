@@ -11,6 +11,7 @@ body, html {
     padding: 0;
     margin: 0;
     font-family: Verdana, sans-serif;
+    scroll-behavior: smooth;
 }
 /*_nav*/
 .nav-menu {
@@ -143,12 +144,18 @@ menu {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50%;
-    border: 2px solid white;
+    border: 5px solid white;
     display: none;
     filter: blur(0.5px); 
     z-index: 10;
 }
-
+.my-circle-photo:hover {
+    cursor: pointer;
+}
+.my-circle-photo a {
+    display: block;
+    height: 100%;
+}
 @media (max-width: 520px) {
     .my-circle-photo {
         margin-left: 250px;
