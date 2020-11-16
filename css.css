@@ -291,6 +291,11 @@ menu {
     transition: 1s linear;
     filter: brightness(200%);
 }
+.link-panel a {
+    display: block; 
+    text-align: center; 
+    height: 100%;
+}
 .link-panel-portfolio {
     margin-top: 40px;
     height: 72px;
@@ -305,7 +310,7 @@ menu {
     transition: 0.5s linear;
     filter: brightness(300%);
  }
-.link-panel a {
+ .link-panel-portfolio a {
     display: block; 
     text-align: center; 
     height: 100%;
