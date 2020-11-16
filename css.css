@@ -657,7 +657,7 @@ textarea {
     height: 50px;
     width: 100%;
     position: absolute;
-    margin-top: 650px;
+    margin-top: 750px;
     display: flex;
     justify-content: center;
 }
@@ -709,7 +709,7 @@ textarea {
         width: 80%; 
     }
    .footer-info-wrapper {
-       margin-top: 1050px;
+       margin-top: 1200px;
     }
     .footer-info {
         font-size: 15px;
