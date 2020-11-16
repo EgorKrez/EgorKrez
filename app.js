@@ -15,21 +15,6 @@ function closeNav() {
     navMenu.style.height = "50px"
 }
 
-let inputName = document.querySelector(".input-name")
-let inputEmail = document.querySelector(".input-email")
-let inputSubject = document.querySelector(".input-subject")
-let inputMessage = document.querySelector(".input-message")
-let button = document.querySelector(".field-button")
-
-let info = {
-    name: "",
-    email: "",
-    subject: "",
-    message: ""
-}
-
-let arrayInfo = []
-
 var form_id_js = "javascript_form";
                 
                     var data_js = {
@@ -61,16 +46,22 @@ var form_id_js = "javascript_form";
                             }
                         };
                 
+                        var name = document.querySelector("#" + form_id_js + " [name='name']").value;
+                        var email = document.querySelector("#" + form_id_js + " [name='email']").value;
                         var subject = document.querySelector("#" + form_id_js + " [name='subject']").value;
                         var message = document.querySelector("#" + form_id_js + " [name='text']").value;
+                        data_js['name'] = name;
+                        data_js['email'] = email;
                         data_js['subject'] = subject;
                         data_js['text'] = message;
                 
                         var params = toParams(data_js);
-                
+
                         request.open("POST", "https://postmail.invotes.com/send", true);
                         request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
                 
+                        alert(params)
+
                         request.send(params);
                 
                         return false;

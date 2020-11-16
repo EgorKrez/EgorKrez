@@ -291,6 +291,20 @@ menu {
     transition: 1s linear;
     filter: brightness(200%);
 }
+.link-panel-portfolio {
+    margin-top: 40px;
+    height: 72px;
+    width: 72px;
+    filter: brightness(200%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%; 
+ }
+ .link-panel-portfolio:hover {
+    cursor: pointer;
+    transition: 0.5s linear;
+    filter: brightness(300%);
+ }
 .link-panel a {
     display: block; 
     text-align: center; 
