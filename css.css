@@ -221,10 +221,31 @@ menu {
     background-image: url("assets/krez.jpg");
 }
 
+@media (max-width: 1000px) {
+    .short-bio-links {
+        margin-left: -10px;
+    }
+}
+
+@media (max-width: 900px) {
+    .short-bio-links {
+        margin-left: -40px;
+    }
+}
+
+@media (max-width: 400px) {
+    .short-bio-links {
+        margin-left: -30px;
+    }
+}
+
 @media (max-width: 322px) {
     .short-bio {
         width: 130%;
         padding-left: 20px;
+    }
+    .short-bio-links {
+        margin-left: 0px;
     }
     .my-circle-photo {
         margin-left: 225px;
@@ -242,17 +263,7 @@ menu {
     justify-content: space-around;
 }
 
-@media (max-width: 1000px) {
-    .short-bio-links {
-        margin-left: -10px;
-    }
-}
 
-@media (max-width: 900px) {
-    .short-bio-links {
-        margin-left: -40px;
-    }
-}
 
 .developper {
     font-size: 30px;
