@@ -14,7 +14,7 @@ function closeNav() {
     nav.style.height = "50px"
     navMenu.style.height = "50px"
 }
-
+/* 
 var form_id_js = "javascript_form";
                 
                     var data_js = {
@@ -50,8 +50,6 @@ var form_id_js = "javascript_form";
                         var email = document.querySelector("#" + form_id_js + " [name='email']").value;
                         var subject = document.querySelector("#" + form_id_js + " [name='subject']").value;
                         var message = document.querySelector("#" + form_id_js + " [name='text']").value;
-                        data_js['name'] = name;
-                        data_js['email'] = email;
                         data_js['subject'] = subject;
                         data_js['text'] = message;
                 
@@ -82,3 +80,4 @@ var form_id_js = "javascript_form";
                     js_form.addEventListener("submit", function (e) {
                         e.preventDefault();
                     });
+ */

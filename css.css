@@ -605,8 +605,10 @@ footer {
     text-align: center; 
     align-items: center; 
     padding-top: 50px;
-    padding-bottom: 50px; 
-    
+    padding-bottom: 50px;     
+}
+fieldset {
+    border: none;
 }
 
 @media (max-width: 1041px) {
