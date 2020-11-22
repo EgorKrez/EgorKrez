@@ -11,6 +11,7 @@ body, html {
     padding: 0;
     margin: 0;
     font-family: Verdana, sans-serif;
+    scroll-behavior: smooth;
 }
 /*_nav*/
 .nav-menu {
@@ -143,12 +144,18 @@ menu {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50%;
-    border: 2px solid white;
+    border: 5px solid white;
     display: none;
     filter: blur(0.5px); 
     z-index: 10;
 }
-
+.my-circle-photo:hover {
+    cursor: pointer;
+}
+.my-circle-photo a {
+    display: block;
+    height: 100%;
+}
 @media (max-width: 520px) {
     .my-circle-photo {
         margin-left: 250px;
@@ -214,10 +221,31 @@ menu {
     background-image: url("assets/krez.jpg");
 }
 
+@media (max-width: 1000px) {
+    .short-bio-links {
+        margin-left: -10px;
+    }
+}
+
+@media (max-width: 900px) {
+    .short-bio-links {
+        margin-left: -40px;
+    }
+}
+
+@media (max-width: 400px) {
+    .short-bio-links {
+        margin-left: -30px;
+    }
+}
+
 @media (max-width: 322px) {
     .short-bio {
         width: 130%;
         padding-left: 20px;
+    }
+    .short-bio-links {
+        margin-left: 0px;
     }
     .my-circle-photo {
         margin-left: 225px;
@@ -235,17 +263,7 @@ menu {
     justify-content: space-around;
 }
 
-@media (max-width: 1000px) {
-    .short-bio-links {
-        margin-left: -10px;
-    }
-}
 
-@media (max-width: 900px) {
-    .short-bio-links {
-        margin-left: -40px;
-    }
-}
 
 .developper {
     font-size: 30px;
@@ -285,6 +303,25 @@ menu {
     filter: brightness(200%);
 }
 .link-panel a {
+    display: block; 
+    text-align: center; 
+    height: 100%;
+}
+.link-panel-portfolio {
+    margin-top: 40px;
+    height: 72px;
+    width: 72px;
+    filter: brightness(200%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%; 
+ }
+ .link-panel-portfolio:hover {
+    cursor: pointer;
+    transition: 0.5s linear;
+    filter: brightness(300%);
+ }
+ .link-panel-portfolio a {
     display: block; 
     text-align: center; 
     height: 100%;
@@ -366,6 +403,9 @@ a:hover {
     height: 150px;
     display: flex;
     justify-content: space-around;
+}
+#first-block {
+    margin-top: 20px;
 }
 .career-wrapper {
     padding-left: 40px;
@@ -568,8 +608,10 @@ footer {
     text-align: center; 
     align-items: center; 
     padding-top: 50px;
-    padding-bottom: 50px; 
-    
+    padding-bottom: 50px;     
+}
+fieldset {
+    border: none;
 }
 
 @media (max-width: 1041px) {
@@ -631,7 +673,7 @@ textarea {
     height: 50px;
     width: 100%;
     position: absolute;
-    margin-top: 650px;
+    margin-top: 750px;
     display: flex;
     justify-content: center;
 }
@@ -683,7 +725,7 @@ textarea {
         width: 80%; 
     }
    .footer-info-wrapper {
-       margin-top: 1050px;
+       margin-top: 1200px;
     }
     .footer-info {
         font-size: 15px;
@@ -811,33 +853,3 @@ textarea {
     }
 }
 
-
-
-/*
-.career {
-    display: flex;
-    width: 100%;
-    height: 600px;
-}
-.career-block-wrapper {
-    margin-top: 50px;
-    width: 80%;
-    max-height: 1100px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    flex-direction: column;
-}
-.career-block {
-    width: 100%;
-    max-height: 150px;
-    display: flex;
-    justify-content: space-around;
-}
-.career-wrapper {
-    padding-left: 40px;
-    font-size: 17px;
-    color: #38AECC;
-    float: left;
-}
-*/
