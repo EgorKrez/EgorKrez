@@ -404,6 +404,9 @@ a:hover {
     display: flex;
     justify-content: space-around;
 }
+#first-block {
+    margin-top: 20px;
+}
 .career-wrapper {
     padding-left: 40px;
     font-size: 17px;
