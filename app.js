@@ -14,3 +14,8 @@ function closeNav() {
     nav.style.height = "50px"
     navMenu.style.height = "50px"
 }
+
+ function showTitle(t) {
+    document.querySelector("title").text = t + " - Egor Krez"
+} 
+
